@@ -1,16 +1,14 @@
 package br.com.dio.model;
 
 public class Space {
-
     private Integer actual;
     private final int expected;
     private final boolean fixed;
 
-
-    public Space(final int expected, final boolean fixed) {
+    public Space(int expected, boolean fixed) {
         this.expected = expected;
         this.fixed = fixed;
-        if (fixed){
+        if(fixed){
             actual = expected;
         }
     }
