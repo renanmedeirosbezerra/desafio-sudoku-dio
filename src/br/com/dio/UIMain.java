@@ -9,6 +9,8 @@ import static java.util.stream.Collectors.toMap;
 public class UIMain {
 
     public static void main(String[] args) {
+
+        System.out.println("Bem vindo");
         final var gameConfig = Stream.of(args)
                 .collect(toMap(k -> k.split(";")[0], v -> v.split(";")[1]));
         var mainsScreen = new MainScreen(gameConfig);
